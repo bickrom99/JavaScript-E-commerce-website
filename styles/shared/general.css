@@ -1,0 +1,214 @@
+body {
+  font-family: Roboto, Arial;
+  color: rgb(33, 33, 33);
+  /* The <body> element has a default margin of 8px
+     on all sides. This removes the default margins. */
+  margin: 0;
+}
+
+/* <p> elements have a default margin on the top
+   and bottom. This removes the default margins. */
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+input,
+select,
+button {
+  font-family: Roboto, Arial;
+}
+
+.button-primary {
+  color: rgb(33, 33, 33);
+  background-color: rgb(255, 216, 20);
+  border: 1px solid rgb(252, 210, 0);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.button-primary:hover {
+  background-color: rgb(247, 202, 0);
+  border: 1px solid rgb(242, 194, 0);
+}
+
+.button-primary:active {
+  background: rgb(255, 216, 20);
+  border-color: rgb(252, 210, 0);
+  box-shadow: none;
+}
+
+.button-secondary {
+  color: rgb(33, 33, 33);
+  background: white;
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.button-secondary:hover {
+  background-color: rgb(247, 250, 250);
+}
+
+.button-secondary:active {
+  background-color: rgb(237, 253, 255);
+  box-shadow: none;
+}
+
+/* These styles will limit text to 2 lines. Anything
+   beyond 2 lines will be replaced with "..."
+   You can find this code by using an A.I. tool or by
+   searching in Google.
+   https://css-tricks.com/almanac/properties/l/line-clamp/ */
+.limit-text-to-2-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.link-primary {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+}
+
+.link-primary:hover {
+  color: rgb(196, 80, 0);
+}
+
+.checkout-header-left-section a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+/* Styles for dropdown selectors. */
+select {
+  color: rgb(33, 33, 33);
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  border-radius: 8px;
+  padding: 3px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgb(255, 153, 0);
+}
+
+.hero-section {
+  background: black;
+  color: white;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h2 {
+  margin-top: 40px;
+  font-size: 2.5rem;
+}
+.hero-section p {
+  width: 60%;
+  margin: auto 0;
+  text-align: center;
+  margin-top: -20px;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+.hero-section a {
+  background: transparent;
+  text-decoration: none;
+  color: #eaeaea;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  &:hover {
+    color: #e29f0d;
+  }
+}
+#arrow-icon {
+  font-size: 0.8rem;
+}
+
+.section-1 {
+  text-align: center;
+}
+.section-1 .inner-section-1 {
+  background: #d2e8ff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section-1 marquee {
+  width: 30%;
+  margin: auto;
+}
+/* foooter secetion */
+.footer-section {
+  margin-top: 30px;
+  width: 100%;
+}
+.footer-form-section {
+  background: #141414;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-form-section strong {
+  color: rgb(228, 228, 228);
+  font-size: 16px;
+  width: 10%;
+  margin: auto;
+}
+.footer-form-section input {
+  width: 30%;
+  margin: auto;
+  padding: 8px 2px;
+  margin-left: 2px;
+  background: black;
+  color: #f3f3f3;
+  border: 1.5px solid #a8a8a8;
+  border-radius: 5px;
+}
+.footer-form-section button {
+  margin-left: 2px;
+  padding: 8px 20px;
+  background: #fe0c0c;
+  color: #f3f3f3;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  &:hover {
+    background: #ca0707;
+    color: #a8a8a8;
+  }
+}
+
+.footer-end-section {
+  background: #000000;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+.footer-end-section a {
+  font-size: 1rem;
+  font-weight: bold;
+}
